@@ -1,0 +1,59 @@
+/* Base CSS Reset */
+:root {
+    font-size: 100%; /* Asegura que 1rem = 16px */
+    line-height: 1.5; /* Espaciado de línea cómodo */
+    box-sizing: border-box; /* Modelo de caja estándar */
+  }
+  
+  /* Aplica box-sizing a todos los elementos y pseudoelementos */
+  *, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina padding por defecto */
+  }
+  
+  /* Elimina decoración y estilo por defecto en enlaces */
+  a {
+    text-decoration: none;
+    color: inherit; /* Usa el color del texto circundante */
+  }
+  
+  /* Asegura estilos básicos para listas */
+  ol, ul {
+    list-style: none; /* Elimina los estilos por defecto */
+  }
+  
+  /* Elimina subrayados y bordes en botones */
+  button, input, textarea {
+    border: none;
+    background: none;
+    font: inherit; /* Usa la fuente del contexto */
+    outline: none; /* Elimina los contornos por defecto */
+  }
+  
+  /* Mejora la apariencia de imágenes */
+  img {
+    display: block;
+    max-width: 100%; /* Evita que excedan su contenedor */
+    height: auto; /* Mantiene la proporción */
+  }
+  
+  /* Aplica un estilo básico para tablas */
+  table {
+    border-collapse: collapse; /* Evita bordes dobles */
+    width: 100%; /* Ocupa el ancho disponible */
+  }
+  
+  th, td {
+    text-align: left; /* Alineación básica */
+    padding: 0.5rem; /* Espaciado interno básico */
+  }
+  
+  /* Asegura un diseño responsivo por defecto */
+  body {
+    margin: 0;
+    font-family: system-ui, sans-serif; /* Fuente legible y moderna */
+    -webkit-font-smoothing: antialiased; /* Suavizado en navegadores Webkit */
+    -moz-osx-font-smoothing: grayscale; /* Suavizado en navegadores Firefox */
+    min-height: 100vh; /* Asegura que el body siempre ocupe la pantalla */
+  }
