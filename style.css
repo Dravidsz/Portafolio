@@ -244,3 +244,16 @@ main > section {
     transform: translateX(5px); /
   }
 }
+
+/*Colores para iconos de footer*/
+.fa-whatsapp{
+  color: #25d366;
+}
+
+.fa-instagram{
+  color: #e1306c;
+}
+
+.fa-linkedin{
+  color: #004182;
+}
