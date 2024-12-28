@@ -1,59 +1,246 @@
+/* Importando Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
+
 /* Base CSS Reset */
 :root {
-    font-size: 100%; /* Asegura que 1rem = 16px */
-    line-height: 1.5; /* Espaciado de línea cómodo */
-    box-sizing: border-box; /* Modelo de caja estándar */
-  }
+  font-size: 100%;
+  /* Asegura que 1rem = 16px */
+  line-height: 1.5;
+  /* Espaciado de línea cómodo */
+  box-sizing: border-box;
+  /* Modelo de caja estándar */
+}
+
+/* Aplica box-sizing a todos los elementos y pseudoelementos */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  /* Elimina márgenes por defecto */
+  padding: 0;
+  /* Elimina padding por defecto */
+}
+
+/* Elimina decoración y estilo por defecto en enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+  /* Usa el color del texto circundante */
+}
+
+/* Asegura estilos básicos para listas */
+ol,
+ul {
+  list-style: none;
+  /* Elimina los estilos por defecto */
+}
+
+/* Elimina subrayados y bordes en botones */
+button,
+input,
+textarea {
+  border: none;
+  background: none;
+  font: inherit;
+  /* Usa la fuente del contexto */
+  outline: none;
+  /* Elimina los contornos por defecto */
+}
+
+/* Mejora la apariencia de imágenes */
+img {
+  display: block;
+  max-width: 100%;
+  /* Evita que excedan su contenedor */
+  height: auto;
+  /* Mantiene la proporción */
+}
+
+/* Aplica un estilo básico para tablas */
+table {
+  border-collapse: collapse;
+  /* Evita bordes dobles */
+  width: 100%;
+  /* Ocupa el ancho disponible */
+}
+
+th,
+td {
+  text-align: left;
+  /* Alineación básica */
+  padding: 0.5rem;
+  /* Espaciado interno básico */
+}
+
+/* Asegura un diseño responsivo por defecto */
+body {
+  background-color: #E5E5E5;
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  /* Fuente legible y moderna */
+  -webkit-font-smoothing: antialiased;
+  /* Suavizado en navegadores Webkit */
+  -moz-osx-font-smoothing: grayscale;
+  /* Suavizado en navegadores Firefox */
+  min-height: 100vh;
+  /* Asegura que el body siempre ocupe la pantalla */
+}
+
+
+
+/*Css para nav-bar*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 100px;
+  background-color: #E5E5E5;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+}
+
+.logo-dot {
+  color: #0096C7;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.btn-whatsapp {
+  background-color: #0096C7;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+
+/*Estilos para el footer*/
+footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: first baseline;
+  align-items: center;
+  padding-left: 100px;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.fa-brands {
+  font-size: 35px;
+}
+
+/*Estilos de principal*/
+main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 100px;
+  gap: 10px;
+}
+
+main > section {
+  flex: 1;
+}
+
+.Welcome{
+  padding: 80px 0px;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.circle-logo{
+  width: 450px;        
+  height: 450px;        
+  background-color: #D9D9D9; 
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  color: white;
+  font-weight: bold;
+}
+
+
+
+.fa-html5{
+  color: #FB8500;
+  font-size: 70px;
+}
+.fa-css3-alt{
+  color: #0077B6;
+  font-size: 70px;
+}
+.fa-js{
+  color: #FFD500;
+  font-size: 70px;
+}
+
+/*Alineacion de los div de los logos de progrmacion*/
+.program-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; 
+  padding-left: 20px;
+  margin-bottom: 0px;
+}
+
+.program-logo > div {
+  gap: 10px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.program-logo > .logo-css {
+  align-self: flex-end;
+}
+
+.program-logo > .js-logo {
+  align-self: flex-start; 
+}
+.program-logo >.logo-html{
+  align-self: flex-start;
+}
+/*Color de p de los iconos */
+.p-icons{
+  background-color: #CED4DA;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+
+
+
+/*Animacion para titulo*/
+.logo{
+  white-space: nowrap;
   
-  /* Aplica box-sizing a todos los elementos y pseudoelementos */
-  *, *::before, *::after {
-    box-sizing: inherit;
-    margin: 0; /* Elimina márgenes por defecto */
-    padding: 0; /* Elimina padding por defecto */
+  animation: move-left 5s ease-in-out forwards;
+}
+
+@keyframes move-left {
+  0% {
+    transform: translateX(-100%); 
   }
-  
-  /* Elimina decoración y estilo por defecto en enlaces */
-  a {
-    text-decoration: none;
-    color: inherit; /* Usa el color del texto circundante */
+  100% {
+    transform: translateX(5px); /
   }
-  
-  /* Asegura estilos básicos para listas */
-  ol, ul {
-    list-style: none; /* Elimina los estilos por defecto */
-  }
-  
-  /* Elimina subrayados y bordes en botones */
-  button, input, textarea {
-    border: none;
-    background: none;
-    font: inherit; /* Usa la fuente del contexto */
-    outline: none; /* Elimina los contornos por defecto */
-  }
-  
-  /* Mejora la apariencia de imágenes */
-  img {
-    display: block;
-    max-width: 100%; /* Evita que excedan su contenedor */
-    height: auto; /* Mantiene la proporción */
-  }
-  
-  /* Aplica un estilo básico para tablas */
-  table {
-    border-collapse: collapse; /* Evita bordes dobles */
-    width: 100%; /* Ocupa el ancho disponible */
-  }
-  
-  th, td {
-    text-align: left; /* Alineación básica */
-    padding: 0.5rem; /* Espaciado interno básico */
-  }
-  
-  /* Asegura un diseño responsivo por defecto */
-  body {
-    margin: 0;
-    font-family: system-ui, sans-serif; /* Fuente legible y moderna */
-    -webkit-font-smoothing: antialiased; /* Suavizado en navegadores Webkit */
-    -moz-osx-font-smoothing: grayscale; /* Suavizado en navegadores Firefox */
-    min-height: 100vh; /* Asegura que el body siempre ocupe la pantalla */
-  }
+}

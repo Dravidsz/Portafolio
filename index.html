@@ -5,39 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="webComponets/header.js"></script>
+    <script src="webComponets/footer.js"></script>
     <title>Dravidsz</title>
 </head>
 
 <body>
-    <header>
-        <div class="nav-var">
-            <div class="logo">
-                <h2>D R A V I D Z</h2>
-            </div>
+    <header-component></header-component>
 
-            <div class="nav-links">
-                <a href="#" class="nav-link">Inicio</a>
-                <a href="#" class="nav-link">Trabajo</a>
-                <a href="#" class="nav-link">Habilidades</a>
-                <a href="#" class="nav-link">Contacto</a>
-            </div>
-        </div>
-
-        <button class="btn-whatsapp">
-            <a href="https://wa.me/573178652056" target="_blank">
-                <i class="fa-brands fa-whatsapp">Whatsapp</i>
-            </a>
-        </button>
-        
-        <h2>Provando cambios</h2>
-
-    </header>
     <main>
+        <section class="Welcome">
+            <p>Hola , soy</p>
+            <p>Hector Ortega</p>
+            <p>Soy un desarrollador de software
+                apasionado por aprender y
+                crecer en el mundo de la tecnología.
+                Mi objetivo es contribuir al desarrollo,
+                mantenimiento y mejora de aplicaciones y
+                sistemas mientras refuerzo mis habilidades.</p>
+        </section>
 
+        <section class="circle">
+            <p class="circle-logo">circulo</p>
+        </section>
+
+        <section class="program-logo">
+            <div class="logo-html">
+                <i class="fa-brands fa-html5"></i>
+                <p class="p-icons">HTML</p>
+            </div>
+            <div class="logo-css">
+                <i class="fa-brands fa-css3-alt"></i>
+                <p class="p-icons">CSS</p>
+            </div>
+            <div class="js-logo">
+                <i class="fa-brands fa-js"></i>
+                <p class="p-icons">JS</p>
+            </div>
+        </section>
     </main>
-    <footer>
 
-    </footer>
+    <footer-component></footer-component>
+
 </body>
 
 </html>
