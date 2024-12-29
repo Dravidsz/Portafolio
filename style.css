@@ -257,3 +257,51 @@ main > section {
 .fa-linkedin{
   color: #004182;
 }
+
+/*Medias queries*/
+@media (max-width: 600px) {
+  header{
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 0%;
+  }
+
+  main{
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0%;
+  }
+
+  footer{
+    position: relative;
+    margin: 0;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 40px;
+    
+  }
+  .program-logo{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0%;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .program-logo > .logo-css {
+    align-self: center;
+  }
+  
+  .program-logo > .js-logo {
+    align-self:center; 
+  }
+  .program-logo >.logo-html{
+    align-self: center;
+  }
+
+}
+
