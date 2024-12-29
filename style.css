@@ -277,7 +277,8 @@ main > section {
     position: relative;
     margin: 0;
     align-items: center;
-    justify-content: space-around;
+    justify-content:center;
+    gap: 40px;
     padding: 20px 40px;
     
   }
